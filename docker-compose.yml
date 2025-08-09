@@ -5,10 +5,10 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
-      - "5555:5555"
+      - "3006:3000"
+      - "5561:5555"
     environment:
-      - DATABASE_URL=postgresql://postgres:postgres@db:5432/orderflow
+      - DATABASE_URL=postgresql://postgres:postgres@db:5441/orderflow
     depends_on:
       - db
     volumes:
